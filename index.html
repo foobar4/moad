@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<body style="font-family:Calibri">
+		<p><img src="logo.png" alt="logo"></p>
+
+		<div id="header" style="background-color:#339933;">
+		<h1 style="margin-bottom:0;">M.O.A.D. - The Mother of all Diagrams</h1></div>
+
+
+		This app generates a graphviz diagram using a preformatted Google Doc spreadsheet.<br>
+
+		<a href="./format.html">Click here to find out more about formatting the spreadsheet<br></a>
+
+		<h3>Please provide your details:</h3>
+		<form action="generate.php" method="post">
+			Please type the Google App document Key: <input type="text" name="fkey"> <a href="./key.html"> (what is this?)<br></a>
+			Please type your email address: <input type="text" name="fmail"><br> 
+			Please type your password: <input type="password" name="fpswd" size="25"><br>
+		
+			Please select diagram type:
+
+			<select name="diagT">
+				<option value="sfdp">SFDP</option>
+				<option value="dot">DOT</option>
+				<option value="neato">NEATO</option>
+				<option value="circo">CIRCO</option>
+				<option value="fdp">FDP</option>
+				<option value="twopi">TWOPI</option>
+			</select><br><br>
+
+
+
+		<input type="submit" value="Generate PDF Diagram"> 
+
+		</form>
+
+
+
+	</body>
+</html>
